@@ -1,0 +1,17 @@
+[Unit]
+Description=robireton.app
+After=network.target
+
+[Service]
+WorkingDirectory=/srv/robireton.app
+EnvironmentFile=/etc/robireton.env
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=500ms
+StartLimitInterval=0
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=robireton.app
+
+[Install]
+WantedBy=multi-user.target

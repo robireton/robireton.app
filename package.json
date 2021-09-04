@@ -1,0 +1,33 @@
+{
+  "name": "robireton.app",
+  "version": "1.0.0",
+  "description": "project website",
+  "type": "module",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "main": "lib/server.js",
+  "scripts": {
+    "nodemon": "nodemon -r dotenv/config",
+    "start": "node -r dotenv/config lib/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robireton/robireton.app.git"
+  },
+  "author": "Rob Ireton <rob@ireton.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robireton/robireton.app/issues"
+  },
+  "homepage": "https://github.com/robireton/robireton.app#readme",
+  "dependencies": {
+    "@robireton/chrono": "^1.0.1",
+    "@robireton/environment": "^2.2.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "serve-favicon": "^2.5.0"
+  }
+}
